@@ -1,14 +1,9 @@
 pipeline {
-    agent {
-        docker {
-            image 'docker:stable'
-            args '-v /var/run/docker.sock:/var/run/docker.sock'
-        }
-    }
+   
     environment {
         DOCKER_IMAGE = 'simple-node-app' // Nom de votre image Docker
         DOCKER_TAG = "latest" // Tag de votre image Docker
-        NEXUS_URL = 'http://localhost:8081/repository/repo1' // URL de votre Nexus
+        NEXUS_URL = 'http://localhost:8081' // URL de votre Nexus
         NEXUS_REPO = 'repo1' // Nom de votre repository Nexus
         NEXUS_CREDENTIALS_ID = 'nexus' // ID des credentials Nexus dans Jenkins
     }
