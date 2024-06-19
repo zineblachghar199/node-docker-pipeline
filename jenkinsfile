@@ -8,7 +8,7 @@ pipeline {
     environment {
         DOCKER_IMAGE = 'simple-node-app' // Nom de votre image Docker
         DOCKER_TAG = "latest" // Tag de votre image Docker
-        NEXUS_URL = 'http://localhost:8082' // URL de votre Nexus
+        NEXUS_URL = 'http://localhost:8081' // URL de votre Nexus
         NEXUS_REPO = 'repo1' // Nom de votre repository Nexus
         NEXUS_CREDENTIALS_ID = 'nexus' // ID des credentials Nexus dans Jenkins
     }
