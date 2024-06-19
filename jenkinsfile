@@ -1,5 +1,7 @@
 pipeline {
-   
+   agent {
+        
+    }
     environment {
         DOCKER_IMAGE = 'simple-node-app' // Nom de votre image Docker
         DOCKER_TAG = "latest" // Tag de votre image Docker
